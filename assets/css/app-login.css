@@ -1,0 +1,107 @@
+*, *::after, *::before{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(26,37,65);
+	background: linear-gradient(180deg, rgba(26,37,65,1) 0%, rgba(0,61,119,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.app-logo{
+	text-align: center;
+}
+.app-login{
+	width: 50%;
+	/*height: 200px;*/
+}
+.app-login-title{
+	font-size:1rem;
+	text-align: center;
+	padding:20px 0;
+	font-family: 'Roboto-Bold', sans-serif;
+	color:#FFF;
+}
+
+/*
+	FORMATOS E TIPOS DE BOTOES
+*/
+.app-btn{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #1A2541;
+	font-family: 'Roboto-Bold', sans-serif;
+	text-transform: uppercase;
+	cursor:pointer;
+	border:0;
+	font-weight: bold;
+	font-size:1rem;
+}
+.app-enter{
+	background: #FFCB31;
+	mix-blend-mode: normal;
+}
+.app-border-radius{
+	border-radius: 20px;
+}
+
+
+
+/*
+	TIPOS E FORMATOS DE GRIDS
+*/
+.grid{
+	display: grid;
+}
+.grid-template-2{
+	grid-template-columns: 1fr 1fr;
+}
+.grid-item{
+	margin:0 20px;
+}
+.grid-item:nth-child(1){
+	/*background-color: purple;*/
+}
+.grid-item:nth-child(2){
+	background-color: #111111;
+	border-radius: 20px;
+}
+.grid-item label > input{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+/*
+CAMPOS
+*/
+.app-input-text{
+	background: rgba(3, 9, 26, 1);
+	height: 50px;
+	line-height: 50px;
+	cursor:pointer;
+	font-size:1rem;
+	padding:0 10px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: bold;
+	color:#FFFFFF;
+	border:0;
+	text-align: center;
+	/*mix-blend-mode: multiply;*/
+}
+.app-input-text::placeholder{
+	color:#FFFFFF;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: bold;
+	position: relative;
+	z-index: 9999;
+}

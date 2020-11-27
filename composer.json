@@ -1,0 +1,7 @@
+{
+
+    "require": {
+         "cboden/ratchet": "^0.4.2",
+         "romainrg/ratchet_client": "^1.0"
+    }
+}
